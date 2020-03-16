@@ -1,21 +1,17 @@
 <img src="https://i.imgur.com/e0Asgu3.jpg">
 
-***
-
-# ⚠️ Cloudworker is no longer actively maintained at Dollar Shave Club. If you're interested in volunteering to help, please open an issue ⚠️
-
 Cloudworker allows you to run Cloudflare Worker scripts locally. 
 
 ## Installing
 
 Install via NPM:
 ```sh
-npm install -g @dollarshaveclub/cloudworker
+npm install -g @alloc/cloudworker
 ```
 ## Package Usage
 
 ```
-const Cloudworker = require('@dollarshaveclub/cloudworker')
+const Cloudworker = require('@alloc/cloudworker')
 
 const simpleScript = `addEventListener('fetch', event => {
   event.respondWith(new Response('hello', {status: 200}))
